@@ -1,6 +1,6 @@
 package Transport;
 
-public class Truck extends Transport {
+public class Truck extends Car {
     public Truck(String modelName, int wheelesCount) {
         super(modelName, wheelesCount);
     }
@@ -8,12 +8,7 @@ public class Truck extends Transport {
     @Override
     public void service() {
         super.service();
-        this.checkEngine();
         this.checkTrailer();
-    }
-
-    private void checkEngine() {
-        System.out.println("Проверяем двигатель");
     }
 
     private void checkTrailer() {
